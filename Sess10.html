@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DemoJs10</title>
+</head>
+<body>
+<h1 id="head1"> Tieu de trang</h1>
+<p id="p1">W3Schools maintains a complete JavaScript reference, including all HTML and browser objects.
+
+    The reference contains examples for all properties, methods and events, and is continuously updated according to the latest web standards.
+
+</p>
+<img id="nt" src="css/imgs/cover-Thoi-trang-sao-nam-an-tuong-tuan-4-thang-72018-ELLE-Man-.jpg" ;/>
+<script type="text/javascript">
+    function demo(){
+        var h = document.getElementById("head1");
+        h.innerText = "Tieu de sau khi chinh sua";
+        var pp = document.getElementById("p1");
+        pp.style.color = "red";
+        pp.style.fontSize = "18px";
+        var text = pp.innerText;
+        pp.innerHTML="<span>"+"text"+"</span>";
+        pp.classList.add("abc") // them class
+        pp.classList.remove("xyz");
+
+    }
+    setTimeout(demo,3000);
+    var f=true;
+    function Img(){
+        var x = document.getElementById("nt");
+        if(f){
+            x.style.display="block";
+            f = false;
+        }else {
+            x.style.display="none";
+            f=true;
+        }
+    }
+    //setInterval(Img,1000);
+</script>
+
+</body>
+</html>

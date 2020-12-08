@@ -1,0 +1,24 @@
+body{
+    background-color: black;
+}
+.box{
+    position: fixed;
+    background-color: #fafafa;
+    width: 400px;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0 0 1px silver;
+    padding: 30px;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.header{
+    font-weight: 600;
+    font-size: 20px;
+}
+#home,#pro,#mes,#set{
+    display: none;
+}
+

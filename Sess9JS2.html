@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo Js 2</title>
+</head>
+<body>
+<script type="text/javascript">
+   /* alert("Cam tre em duoi 18 tuoi!");//void
+   var c = confirm("Ban chac chan muon vao xem?");//boolean true/false
+    if(c){ //neu nguoi dung ok
+        console.log("ok");
+    }else{//cancel
+        console.log("Cancel");
+    }*/
+  /* var p = prompt("Ban ten la gi?");// string
+   p = parseInt(p);//bien string thanh number (int)
+   console.log(p+5);
+   //isNaN(p);
+   if(isNaN(p)){
+       console.log("Error")
+   }else {
+       console.log(p+5);
+   }*/
+
+   //Vi du tao 1 so ngau nhien tu 0->99
+   //Sau do cho ng dung nhap 1 so -> Kiem tra xem trung giai hay khong
+   //tao so ngau nhien
+
+  /* var rd = parseInt(Math.random()*100);
+   var luckyNumber = prompt("Nhap so may man:");
+   luckyNumber = parseInt(luckyNumber);
+   if(luckyNumber == rd){
+       alert("Chuc mung ban");
+   }else {
+       alert("Hay quay lai voa ngay mai");
+   }*/
+
+   //vietlot
+   var vl=[];
+   do{
+       var n = parseInt(Math.random()*46);
+       if(!vl.includes(n)){
+           vl.push(n);
+       }
+   }while(vl.length<5)
+   var User=[];
+   do{
+   var n = prompt("Nhap so may man:");
+   n = parseInt(n);
+       if(isNaN(n)&&!User.includes(n)&&n>=0 && n<46){
+           User.push(n);
+       }
+
+
+
+
+</script>
+
+</body>
+</html>

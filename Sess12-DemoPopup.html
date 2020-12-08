@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Popup</title>
+    <link rel="stylesheet" href="Libs/Bootstrap3.4.1/css/bootstrap.css">
+    <link rel="stylesheet" href="css/Popup.css">
+    <link rel="stylesheet" href="Libs/FontAwesom.5.15.1/css/all.css">
+</head>
+<body>
+<button type="button" onclick="openPopup()" class="btn-primary btn-lg">Nhan vao de xem anh</button>
+<div id="bg-fade"></div>
+<div id="popup">
+    <form method="post" action="#">
+        <div class="text-right"> <i onclick="closePopup()" class="fas fa-window-close"></i></div>
+        <div class="form-group ">
+            <label>Email</label>
+            <input type="email" class="form-control" name="email"/>
+        </div>
+        <div class="form-group">
+            <label>Telephone</label>
+            <input type="tel" class="form-control" name="telephone"/>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-danger" >Di tiep de xem</button>
+        </div>
+    </form>
+</div>
+<script type="text/javascript">
+    function openPopup(){
+        document.getElementById("bg-fade").style.display="block";
+        document.getElementById("popup").style.display="block";
+    }
+    function closePopup(){
+        document.getElementById("bg-fade").style.display="none";
+        document.getElementById("popup").style.display="none";
+
+    }
+</script>
+</body>
+</html>

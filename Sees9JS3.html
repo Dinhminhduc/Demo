@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo 3</title>
+</head>
+<body>
+<script type="text/javascript">
+    var min=10,sec=0;
+    function CanhBao() {
+        var min_txt = min<10?"0"+min:min;
+        var sec_txt = sec<10?"0"+sec:sec;
+        console.log(min_txt+":"+sec_txt)
+        sec--;
+        if(sec < 0){
+            sec = 59;
+            min--
+        }
+    }
+    //setTimeout(CanhBao,5000);
+    var it = setInterval(CanhBao,5000);
+</script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LabS13</title>
+    <link rel="stylesheet" href="css/AppS13.css">
+</head>
+<body>
+    <div class="box">
+        <div class="header">
+            <p>Xac Dinh Vi Tri Trong Tabs</p>
+        </div>
+        <div class="nav">
+            <button type="button" onclick="home()">Home</button>
+            <button type="button" onclick="pro()">Profile</button>
+            <button type="button" onclick="mes()">Messages</button>
+            <button type="button" onclick="set()">Settings</button>
+            <hr>
+            <script type="text/javascript">
+                function home(){
+                    document.getElementById("home").style.display="block"
+                    document.getElementById("pro").style.display="none"
+                    document.getElementById("mes").style.display="none"
+                    document.getElementById("set").style.display="none"
+                }
+                function pro(){
+                    document.getElementById("home").style.display="none"
+                    document.getElementById("pro").style.display="block"
+                    document.getElementById("mes").style.display="none"
+                    document.getElementById("set").style.display="none"
+                }function mes(){
+                    document.getElementById("home").style.display="none"
+                    document.getElementById("pro").style.display="none"
+                    document.getElementById("mes").style.display="block"
+                    document.getElementById("set").style.display="none"                }
+                function set(){
+                    document.getElementById("home").style.display="none"
+                    document.getElementById("pro").style.display="none"
+                    document.getElementById("mes").style.display="none"
+                    document.getElementById("set").style.display="block"                }
+            </script>
+        </div>
+        <div class="content">
+            <p1 id="home">This is Home content</p1>
+            <p2 id = "pro">This is Profile content</p2>
+            <p3 id="mes">This is Messages content</p3>
+            <p4 id="set">This is Settings content</p4>
+        </div>
+    </div>
+</body>
+</html>
