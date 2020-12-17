@@ -1,0 +1,39 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.survey{
+    color: red;
+    font-size:16px;
+    font-weight: 600;
+}
+.box{
+    border-radius: 5px;
+    border: 2px solid gray;
+}
+.Personal{
+    float: left;
+    width: 200px;
+    color: deepskyblue;
+    font-weight:600;
+    font-size: 16px;
+    padding-left: 30px;
+    padding-top: -10px;
+    z-index: 1;
+}
+.main-content{
+    float: left;
+    height: 100%;
+    width: 100%;
+    background-color: gray;
+    border: 2px solid black;
+    margin: 15px 5px 3px;
+}
+.table{
+    background-color: #fafafa;
+}
+.form-group{
+    width: 100%;
+}
