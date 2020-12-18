@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="Libs/Bootstrap3.4.1/css/bootstrap.css">
     <link rel="stylesheet" href="css/AppForEXam1.css"><link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Libs/FontAwesom.5.15.1/css/all.css">
 </head>
 <body>
 <header class="header col-md-12">
@@ -16,56 +17,90 @@
 <section class="main col-md-12">
     <div class="container">
         <div class="box col-md-6">
-            <div class="Personal">Personal Details:</div>
+            <h2>Personal Details:</h2>
             <div class="main-content">
                 <form method="post" action="#">
                     <div class="form-group">
                         <table class="table table-bordered table-striped table-hover">
-                            <tbody>
-                            <td>Name:</td>
-                            <td><input class="form-control" type="text" placeholder="Nguyen Van A" ></td>
                             <tr>
-                                <td>Phone:</td>
-                                <td><input class="form-control" type="text" placeholder="09324234" ></td>
+                            <td>How often you are surfing this site?</td>
+                            <td>Daily:<input class="form-control" type="radio" name="often" value="daily">
+                                Weekly:<input class="form-control" type="radio" name="often" value="weekly">
+                                Monthly:<input class="form-control" type="radio" name="often" value="monthly">
+                            </td>
+                            <tr>
+                                <td>Which matrimonial site you visit mostly?</td>
+                                <td><input class="form-control" type="text"></td>
                             </tr>
                             <tr >
-                                <td>E-mail:</td>
-                                <td><input class="form-control" type="email" placeholder="duc@gmail.com" ></td>
+                                <td>Where you use Internet?</td>
+                                <td>Home:<input class="form-control" type="radio" name="where" value="home">
+                                    Office:<input class="form-control" type="radio" name="where" value="office">
+                                    Cyber:<input class="form-control" type="radio" name="where" value="cyber">
+                                </td>
 
                             </tr>
                             <tr>
-                                <td>Gender:</td>
-                                <td><input class="form-control" type="radio" value="male" >Male
-                                    <input class="form-control" type="radio" value="female" >Female
+                                <td>Are you fell services provided by us?</td>
+                                <td>Fair:<input class="form-control" type="radio" name="fell" value="fair">
+                                    Good:<input class="form-control" type="radio" name="fell" value="good">
+                                    Very Good:<input class="form-control" type="radio" name="fell" value="vgood">
+                                     Excellence:<input class="form-control" type="radio" name="fell" value="excellence">
                                 </td>
                             </tr>
                             <tr>
-                                <td>Age:</td>
-                                <td><input class="form-control" type="text" placeholder="Nhap tuoi" ></td>
-                            </tr>
-                            <tr>
-                                <td>Qualification:</td>
-                                <td><input class="form-control" type="checkbox"  >BCA
-                                    <input class="form-control" type="checkbox"  >BA
-                                    <input class="form-control" type="checkbox"  >BSC
+                                <td>Which type of member you are?</td>
+                                <td>Free:<input class="form-control" type="radio" name="type" value="free">
+                                    Premium:<input class="form-control" type="radio" name="type" value="premiun">
+                                    Gold:<input class="form-control" type="radio" name="type" value="gold">
                                 </td>
                             </tr>
-                            </tbody>
+                            <tr>
+                                <td>If you are a free member, would you like to take path service?</td>
+                                <td>Yes:<input class="form-control" type="radio" name="path" value="yes">
+                                    No:<input class="form-control" type="radio" name="path" value="no">
+                                    I'll thinks:<input class="form-control" type="path" name="type" value="thinks">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Rate this Website</td>
+                                <td>Below 5:<input class="form-control" type="radio" name="rate" value="5">
+                                    5 to 10:<input class="form-control" type="radio" name="rate" value="5-10">
+                                    More than 10:<input class="form-control" type="radio" name="rate" value="higher">
+                                </td>
+                            </tr>
                         </table>
                     </div>
                     <div class="form-group col-md-8 col-md-offset-4">
-                        <button class="btn-primary" type="submit">Submit</button>
-                        <button class="btn-danger" type="reset">Reset</button>
+                        <button class="btn btn-primary" type="button" onclick="openPopup()">Submit</button>
+                        <button class="btn btn-danger" type="reset">Reset</button>
                     </div>
                 </form>
             </div>
-
-
         </div>
     </div>
     </div>
     </div>
 </section>
+<div id="bg-fade"></div>
+<div id="popup">
+    <div>
+        <i class="fas fa-exclamation-triangle"></i>
+        <p>Thank for participating into Survey!</p>
+        <button type="button" onclick="closePopup()" class="btn-success">OK</button>
+    </div>
+</div>
+<script type="text/javascript">
+    function openPopup(){
+        document.getElementById("bg-fade").style.display="block";
+        document.getElementById("popup").style.display="block";
+    }
+    function closePopup(){
+        document.getElementById("bg-fade").style.display="none";
+        document.getElementById("popup").style.display="none";
+
+    }
+</script>
 
 </body>
-</htmlml>
+</html>

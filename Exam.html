@@ -21,7 +21,6 @@
                 <form method="post" action="#">
                 <div class="form-group">
                     <table class="table table-bordered table-striped table-hover">
-                        <tbody>
                         <td>Name:</td>
                         <td><input class="form-control" type="text" placeholder="Nguyen Van A" ></td>
                         <tr>
@@ -35,8 +34,9 @@
                         </tr>
                         <tr>
                             <td>Gender:</td>
-                            <td><input class="form-control" type="radio" value="male" >Male
-                                <input class="form-control" type="radio" value="female" >Female
+                            <td>
+                                Male:<input class="form-control" type="radio" name="sex" value="male">
+                                Female: <input class="form-control" type="radio" name="sex" value="female">
                             </td>
                         </tr>
                         <tr>
@@ -45,22 +45,19 @@
                         </tr>
                          <tr>
                             <td>Qualification:</td>
-                            <td><input class="form-control" type="checkbox"  >BCA
-                                <input class="form-control" type="checkbox"  >BA
-                                <input class="form-control" type="checkbox"  >BSC
+                            <td>BCA<input class="form-control" type="checkbox" name="Qualification" value="BCA" >
+                                BA<input class="form-control" type="checkbox" name="Qualification" value="BA" >
+                                BSC <input class="form-control" type="checkbox" name="Qualification" value="BSC" >
                             </td>
                         </tr>
-                        </tbody>
                     </table>
                 </div>
                     <div class="form-group col-md-8 col-md-offset-4">
-                        <button class="btn-primary" type="submit"><a href="Exam2.html">Continue</a></button>
-                        <button class="btn-danger" type="reset">Reset</button>
+                        <a href="Exam2.html" type="button " class="btn btn-primary">Continue</a>
+                        <button class="btn btn-danger" type="reset">Reset</button>
                     </div>
                 </form>
             </div>
-
-
         </div>
             </div>
         </div>
